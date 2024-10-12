@@ -1,61 +1,51 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sanctions {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
 }
 
-#gameCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+.sanction {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
 }
 
-#controller {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 150px;
-    height: 150px;
+.sanction h2 {
+    margin-top: 0;
 }
 
-#outerCircle {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-}
-
-#innerCircle {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#inventory {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-}
-
-h3 {
+.sanction ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-p {
-    margin: 5px 0;
+.sanction li {
+    margin-bottom: 10px;
+}
+
+.sanction a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.sanction a:hover {
+    color: #23527c;
 }
