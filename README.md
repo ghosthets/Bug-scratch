@@ -2,6 +2,8 @@
 
 This is a comprehensive list of bug bounty cheat sheets, including links to resources and payloads.
 
+## For Web View 
+<b>https://ghosthets.github.io/Bug-scratch</b>
 ## Table of Contents
 
 * [XSS](#xss)
