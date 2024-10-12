@@ -3,25 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farming Game</title>
+    <title>Bug Bounty Cheat Sheet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
-
-    <div id="controller">
-        <div id="outerCircle">
-            <div id="innerCircle"></div>
+    <div class="container">
+        <h1>Bug Bounty Cheat Sheet</h1>
+        <div class="sanctions">
+            <div class="sanction">
+                <h2>XSS</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/xss.md">XSS Cheat Sheet</a></li>
+                    <li><a href="https://github.com/ismailtasdelen/xss-payload-list">XSS Payload List</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>SQLi</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/sqli.md">SQLi Cheat Sheet</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>SSRF</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/ssrf.md">SSRF Cheat Sheet</a></li>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery">SSRF Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>CRLF</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/crlf.md">CRLF Cheat Sheet</a></li>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CRLF%20Injection">CRLF Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>CSV-Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/csv-injection.md">CSV-Injection Cheat Sheet</a></li>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CSV%20Injection">CSV-Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>Command Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Command%20Injection">Command Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>Directory Traversal</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal">Directory Traversal Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>LFI</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/lfi.md">LFI Cheat Sheet</a></li>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion">LFI Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>XXE</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/xxe.md">XXE Cheat Sheet</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>Open-Redirect</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/open-redirect.md">Open-Redirect Cheat Sheet</a></li>
+                </ul>
+            </div>
+            <div class ="sanction">
+                <h2>RCE</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/rce.md">RCE Cheat Sheet</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>Crypto</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/crypto.md">Crypto Cheat Sheet</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>Template Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/template-injection.md">Template Injection Cheat Sheet</a></li>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection">Template Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>XSLT</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/xslt.md">XSLT Cheat Sheet</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>Content Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/content-injection.md">Content Injection Cheat Sheet</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>LDAP Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LDAP%20Injection">LDAP Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>NoSQL Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection">NoSQL Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>CSRF Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CSRF%20Injection">CSRF Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>GraphQL Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/GraphQL%20Injection">GraphQL Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>IDOR</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Insecure%20Direct%20Object%20References">IDOR Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>ISCM</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Insecure%20Source%20Code%20Management">ISCM Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>LaTex Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection">LaTex Injection Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>OAuth</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/OAuth">OAuth Payloads</a></li>
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>XPATH Injection</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XPATH%20Injection">XPATH Injection Payloads</a></li >
+                </ul>
+            </div>
+            <div class="sanction">
+                <h2>Bypass Upload Tricky</h2>
+                <ul>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecure%20Files">Bypass Upload Tricky Payloads</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <!-- Inventory -->
-    <div id="inventory">
-        <h3>Inventory</h3>
-        <p>Diamonds: <span id="diamondsCount">0</span></p>
-        <p>Food: <span id="foodCount">0</span></p>
-    </div>
-
-    <script src="game.js"></script>
 </body>
 </html>
